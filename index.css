@@ -79,4 +79,38 @@ body {
     width: 20px;
     height: 20px;
     appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.btn::before {
+    content: '\f004';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1.4em;
+}
+
+.btn:checked::before {
+    content: '\f004';
+    font-weight: 700;
+    color: #cc1616;
+}
+
+.left_box {
+    display: flex;
+    align-items: center;
+}
+
+.left_box img {
+    width: 18px;
+    height: 18px;
+    margin-left: 0.4em;
+}
+
+.right_box img {
+    width: 17px;
+    height: 17px;
 }
